@@ -4,10 +4,9 @@
 
 
 ```sh
-$ git clone https://github.com/anuraagnalluri/url-shortener-python 
-$ cd url-shortener
-$ docker-compose up -d --build
-$ docker-compose logs
+$ cd src
+$ pip install -U pip && pip install -r requirements.txt
+$ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 Using [curl](https://curl.haxx.se)

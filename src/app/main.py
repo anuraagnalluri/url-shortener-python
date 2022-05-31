@@ -11,8 +11,10 @@ app = FastAPI()
 @app.post('/api/shorten')
 def get_short_link():
     # Write code here
+    return {'short_link': 'replace this'}
 
 
 @app.get('/{short_link}')
 def redirect(short_link: str):
     # Write code here
+    return None
